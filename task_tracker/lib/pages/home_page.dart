@@ -89,6 +89,14 @@ class _HomePageState extends State<HomePage> {
                       foregroundColor: Colors.white,
                     ),
                   ),
+
+                  ElevatedButton(
+                    onPressed: () {
+                      // Go back to the first route
+                      Navigator.pushNamed(context, "/test");
+                    },
+                    child: const Text('Go to test page'),
+                  ),
                 ],
               ),
             ),
